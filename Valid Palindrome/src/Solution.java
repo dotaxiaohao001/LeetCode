@@ -20,7 +20,7 @@ public class Solution {
     }
     
     public boolean isAlphanumeric(char c){
-    	if(c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
+    	if(c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z') //(c < 'a' && c >'z' is not right)
     		return true;
     	else if(c >= '0' && c <= '9'){
     		return true;

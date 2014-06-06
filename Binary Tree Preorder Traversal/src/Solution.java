@@ -9,8 +9,8 @@
  */
 public class Solution {
     public ArrayList<Integer> preorderTraversal(TreeNode root) {
-    	ArrayList<Integer> arr = new Arraylist<Integer>();
-    	Stack st = new Stack();
+    	ArrayList<Integer> arr = new ArrayList<Integer>();
+    	Stack<TreeNode> st = new Stack<TreeNode>();
         TreeNode p = root;
         if(p != null)
         	st.push(p);

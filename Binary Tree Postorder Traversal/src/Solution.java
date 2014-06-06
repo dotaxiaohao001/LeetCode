@@ -7,6 +7,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+import java.util.*;
 public class Solution {
     public ArrayList<Integer> postorderTraversal(TreeNode root) {
         ArrayList<Integer> arr = new ArrayList<Integer>();
@@ -20,7 +21,7 @@ public class Solution {
         	p = st.peek();
         	if((p.left == null && p.right == null) || (pre != null && (pre == p.left || pre == p.right))){
         		pre = st.pop();
-        		arr.add(pre);
+        		arr.add(pre.val);
         	}
         	else{
         		if(p.right != null)
