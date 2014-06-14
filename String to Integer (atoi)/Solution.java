@@ -9,10 +9,10 @@ public class Solution {
         	cur++;
         }
         //check positive or negative
-        if(cur < len && str.charAt(cur) == '+')//cur < len && should put first
-        	cur++;        
-        if(cur < len && str.charAt(cur) == '-'){
-        	sign = -1;
+        if(cur < len && (str.charAt(cur) == '+'||str.charAt(cur) == '-')){
+        	//cur < len && should put first +-2 error
+        	if(str.charAt(cur) == '-')
+        		sign = -1;
         	cur++;
         }
         //get those number

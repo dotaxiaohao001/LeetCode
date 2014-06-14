@@ -5,7 +5,7 @@ public class Solution {
 	    int result = Integer.MAX_VALUE;
 	    int closet = Integer.MAX_VALUE;
 
-	    for(int i = 0; i < len; ++i){
+	    for(int i = 0; i < len - 2; ++i){
 	    	int first = num[i];
 	    	int j = i + 1;
 	    	int k = len - 1;

@@ -19,7 +19,7 @@ public class Solution {
 					solution.add(first);
 					solution.add(num[j]);
 					solution.add(num[k]);
-					if(!result.contains(solution))
+					//if(!result.contains(solution))
 						result.add(solution);
 					j++;
 					k--;
