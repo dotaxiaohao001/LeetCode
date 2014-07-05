@@ -7,7 +7,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution2 {
+public class Solution {
     public void flatten(TreeNode root) {
     	if(root == null)
     		return;
@@ -23,8 +23,9 @@ public class Solution2 {
     	while(tail.right != null){
     		tail = tail.right;
     	}
-    	tail.right = root.right;
-    	root.left = null;
+    	tail.right = root.right; // left subtree link to right subtree
+    	root.right = root.left;  // root links to left subtree;
+    	root.left = null;	//delete left child link
     }
 
 }
