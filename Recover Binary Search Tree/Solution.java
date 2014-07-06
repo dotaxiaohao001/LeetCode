@@ -16,7 +16,7 @@ public class Solution {
         //swap first and second;
         int temp = first.val;
         first.val = second.val;
-        second.val = first.val;
+        second.val = temp;
     }
 
     private void inOrder(TreeNode root) {
