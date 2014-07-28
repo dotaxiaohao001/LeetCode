@@ -25,6 +25,7 @@ public class Solution {
     				count[i]++;
     		}
     		result += (count[i]%3)<<i;
+    		//acutually result |= (count[i]%3)<<i; would more better for understanding.
     	}
     	return result;
     }

@@ -14,7 +14,7 @@ public class Solution {
     	int size = lists.size();
     	if(size == 0)
     		return null;
-    	return mergeLists(lists, 0, size-1);
+    	return mergeLists(lists, 0, size-1);// use for loop to merge 1 to n would be with time (n^2), use recursion with nlogn
     }
 
     private ListNode mergeLists(ArrayList<ListNode> list, int start, int end){

@@ -29,7 +29,7 @@ public class Solution2 {
     			}
     		}
 
-    		cyrLvl = nextHead;// move to next level
+    		curLvl = nextHead;// move to next level
     	}
     }
 }
