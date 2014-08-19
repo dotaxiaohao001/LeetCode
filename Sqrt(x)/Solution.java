@@ -10,7 +10,7 @@ public class Solution {
     	int right = x;
     	while(left <= right){
     		int mid = left + (right - left)/2;
-    		if(x/mid == mid)
+    		if(x/mid == mid) // avoid out of range
     			return mid;
     		else if(x/mid > mid) // at right
     			left = mid + 1;

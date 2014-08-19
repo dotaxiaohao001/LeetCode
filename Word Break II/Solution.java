@@ -19,7 +19,7 @@ public class Solution {
         	}
         }
         
-        if(R[len] == false)
+        if(R[len] == false)// treaky solution
         	return result;
         
         ArrayList<String> ans = new ArrayList<String>();

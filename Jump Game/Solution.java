@@ -4,7 +4,7 @@ public class Solution {
     	if(len == 0)
     		return false;
     	int last = len - 1;
-    	int reach = A[0];
+    	int reach = 0;
     	int cur = 0;
     	while(cur <= reach && cur < len){
     		if(A[cur] + cur > reach)
@@ -13,6 +13,7 @@ public class Solution {
     		    return true;
     		cur++;
     	}
-        return false;
+        //return false;
+        return reach >= last;
     }
 }
