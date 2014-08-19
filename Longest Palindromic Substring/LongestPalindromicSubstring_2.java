@@ -12,6 +12,8 @@
 // 也可以：从前往后
 //         for(int j = 0; j < len; ++j) {
 //             for(int i = j; i >= 0; --i) {
+
+//另一种思路，遍历所有以 (0) to (len-1) 和 以 (0,1) to (len-2,len-1) 为center的 palidrome
 public class Solution {
     public String longestPalindrome(String s) {
         int len = s.length();
