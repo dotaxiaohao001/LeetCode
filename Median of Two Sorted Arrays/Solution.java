@@ -33,7 +33,7 @@ public class Solution {
 
 
 
-//can't use java in this way, because the start A is changed.
+//can't use java in this way, because the start A is changed. relative sA  the mid should be sA + length/2
  /*   public int findKth(int A[], int B[], int sA, int tA, int sB, int tB, int k){
     	int lenA = tA - sA + 1;
     	int lenB = tB - sB + 1;
