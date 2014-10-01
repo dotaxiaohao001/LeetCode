@@ -13,6 +13,11 @@ public class Solution {
 			int k = len - 1;
 			// 2 sum equal to -first
 			while(j < k){
+
+				if(j > i+1 && num[j] == num[j-1]){
+					j++;
+					continue;
+				}
 				if(first + num[j] + num[k] == 0)
 				{
 					ArrayList<Integer> solution = new ArrayList<Integer>();
