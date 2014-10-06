@@ -3,6 +3,8 @@
 *然后找到最右边的位置j 比 i 大。 交换 这样就得到一个比刚才大的数，
 *但是不一定是next permutation 所以我们需要reverse （i+1， to end）
 *也有点d&c的意思 只有当前i 右边的点组成的是最大permutation才会替换i然后重新组合 = =！
+*
+*error don't forget update condition
 */
 
 import java.util.Arrays;
