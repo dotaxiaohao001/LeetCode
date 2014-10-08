@@ -20,7 +20,7 @@ public class Solution {
     	return result;
     }
 
-    void helper(ArrayList<ArrayList<Integer>> result, ArrayList<Integer> solution, int[] candidates,
+    private void helper(ArrayList<ArrayList<Integer>> result, ArrayList<Integer> solution, int[] candidates,
         int target, int start) {
         if(target < 0 || start == candidates.length) {
         	return;
