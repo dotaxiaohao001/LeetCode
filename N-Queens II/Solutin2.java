@@ -6,7 +6,7 @@ public class Solution {
 	static int result = 0;
     public int totalNQueens(int n) {	
     	int columnAtRow[] = new int[n];
-    	result = 0;
+    	result = 0; // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         //ArrayList<String[]> result = new ArrayList<String[]>();
         helper(n, 0, columnAtRow);
         return result;
