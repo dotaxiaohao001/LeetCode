@@ -32,10 +32,10 @@ public class Solution {
 //     	int[] result = {0};
 
 //     	helper(result, 1, 1, m, n);
-//     	return result;
+//     	return result[0];
 //     }
 
-//     private void helper(int result, int i, int j, int m, int n) {
+//     private void helper(int[] result, int i, int j, int m, int n) {
 //     	if(i > m || j > n) {
 //     		return;
 //     	}
