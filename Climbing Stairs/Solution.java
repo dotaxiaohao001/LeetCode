@@ -20,6 +20,6 @@ public class Solution {
         if(n == 2)
         	return 2;
 
-        return 2 * climbStairs(n - 2);
+        return 2 * climbStairs(n - 2); // cuo de  return climbStairs(n - 1) + climbStairs(n - 2); fibnacci...
     }*/
 }
