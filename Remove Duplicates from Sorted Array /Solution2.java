@@ -1,5 +1,6 @@
 /**
-*思路： 因为是sorted array， 一个用来标记非duplicates 的 index， 当当前访问的A[i] 不等于 A[index],就将A[i]放在index右边。else continue add i。
+*思路： 因为是sorted array， 一个用来标记非duplicates 的 index， 当当前访问的A[i] 不等于 A[index],
+*就将A[i]放在index右边。else continue add i。
 *similar to the remove elements but more EZ
 */
 public class Solution {

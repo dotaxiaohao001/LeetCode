@@ -1,3 +1,10 @@
+/**
+*思路： 还是动态规划的思路。 但是不是仅仅与max 相关， 还与之前的min 有关，
+*solution里的公式比较直观 f(k) = Largest product subarray, from index 0 up to k. g(k) is smallest
+*f(k) = max( f(k-1) * A[k], A[k], g(k-1) * A[k] )
+*g(k) = min( g(k-1) * A[k], A[k], f(k-1) * A[k] )
+*/
+
 public class Solution {
     public int maxProduct(int[] A) {
         if(A == null || A.length == 0) {
